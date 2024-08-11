@@ -1,0 +1,94 @@
+/* Base styles for all screen sizes */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 15px;
+    /* margin-left: 400px; */
+    margin: 0 auto;
+}
+
+.home-container ol li {
+    font-size: 20px;
+    color: #cecece;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.start .btn {
+    padding: .2em 1.7em;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    color: #202020;
+    text-decoration: none;
+    background-color: #faff5a;
+}
+
+#form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+
+#form .userid {
+    padding: .7em 2em;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.saveBtn {
+    margin-left: 10px;
+}
+
+/* Styles for larger screens (desktops, tablets in landscape mode)
+@media (min-width: 768px) {
+    .home-container {
+        max-width: 600px;
+    }
+
+    .home-container ol li {
+        font-size: 1.4em;
+    }
+
+    .start .btn {
+        font-size: 1.4em;
+    }
+} */
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+    .quizApp{
+        font-size: 30px;
+    }
+    .home-container ol {
+        padding: 0 10px;
+    }
+
+    .home-container ol li {
+        font-size: 1em;
+    }
+
+    .start .btn {
+        font-size: 1em;
+    }
+
+    #form {
+        width: 90%;
+    }
+
+    #form .userid {
+        max-width: none;
+    }
+}
